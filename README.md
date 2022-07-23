@@ -1,1 +1,2 @@
-# Grasping-system-of-MZ04-in-Pybullet
+Ubuntu >18.04
+ROS_Melodic/ROS_Noetic
