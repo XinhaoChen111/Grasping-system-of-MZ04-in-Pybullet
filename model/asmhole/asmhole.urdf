@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-1-g15f4949  Build Version: 1.6.7594.29634
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="asmhole">
+  <link concave="yes" name="base_link">
+    <inertial>
+      <origin
+        xyz="-0.175 -0.024983 -0.13028"
+        rpy="0 0 0" />
+      <mass
+        value="1.7687" />
+      <inertia
+        ixx="0.016707"
+        ixy="5.7226E-18"
+        ixz="-2.8868E-18"
+        iyy="0.033874"
+        iyz="-0.0038484"
+        izz="0.028702" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="./base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision concave="yes">
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="./base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+</robot>

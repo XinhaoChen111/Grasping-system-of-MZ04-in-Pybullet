@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-1-g15f4949  Build Version: 1.6.7594.29634
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="hole">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="0.12 -0.0284654867701598 -0.0936074492825432"
+        rpy="0 0 0" />
+      <mass
+        value="0.826753035518015" />
+      <inertia
+        ixx="0.00428294030114229"
+        ixy="-4.03902028371229E-20"
+        ixz="-1.4618833804098E-19"
+        iyy="0.0106208488532391"
+        iyz="-1.72632738357023E-05"
+        izz="0.00639537362833366" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="./base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="./base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+</robot>
