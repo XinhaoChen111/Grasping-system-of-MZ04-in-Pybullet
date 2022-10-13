@@ -1,2 +1,2 @@
-Ubuntu >18.04
+Ubuntu >=18.04
 ROS_Melodic/ROS_Noetic
