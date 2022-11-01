@@ -1,0 +1,45 @@
+<?xml version="1.0" ?>
+<robot name="table1">
+
+    <material name="black">
+        <color rgba="0 0 0 1"/>
+    </material>
+
+    <material name="white">
+        <color rgba="1 1 1 1"/>
+    </material>
+
+    <material name="grey">
+        <color rgba="0.8 0.8 0.8 1"/>
+    </material>
+
+  <link name="base_link">
+    <visual>
+      <geometry>
+        <mesh filename="./base_link.STL"/>
+      </geometry>
+      <material name="grey"/>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="./base_link.STL"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="33.131"/>
+      <origin rpy="0 0 0" xyz="0.5 0.2141 0.26643"/>
+      <inertia ixx="0.36568" ixy="1.2332E-16" ixz="1.0694E-16" iyy="3.5152" iyz="-1.0712E-17" izz="3.7368"/>
+    </inertial>
+  </link>
+
+<!--################################################
+  ########          connect model                #####
+  ####################################################-->
+  <link name="world"/>
+  <joint name="world_arm_joint" type="fixed">
+    <parent link="world"/>
+    <child link="base_link"/>
+    <origin rpy="0.0 0.0 0" xyz="0 0 0"/>
+  </joint>
+
+</robot>
